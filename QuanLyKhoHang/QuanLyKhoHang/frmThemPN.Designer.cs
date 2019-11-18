@@ -68,6 +68,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.numericUpDownSL = new System.Windows.Forms.NumericUpDown();
             this.label12 = new System.Windows.Forms.Label();
+            this.btnTaoMoi = new System.Windows.Forms.Button();
+            this.btnXoaSP = new System.Windows.Forms.Button();
+            this.btnThemSP = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGX)).BeginInit();
@@ -555,11 +558,56 @@
             this.label12.TabIndex = 125;
             this.label12.Text = "Số Lượng";
             // 
+            // btnTaoMoi
+            // 
+            this.btnTaoMoi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTaoMoi.BackgroundImage")));
+            this.btnTaoMoi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTaoMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaoMoi.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnTaoMoi.Location = new System.Drawing.Point(612, 585);
+            this.btnTaoMoi.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTaoMoi.Name = "btnTaoMoi";
+            this.btnTaoMoi.Size = new System.Drawing.Size(136, 68);
+            this.btnTaoMoi.TabIndex = 131;
+            this.btnTaoMoi.Text = "Tạo Phiếu Mới";
+            this.btnTaoMoi.UseVisualStyleBackColor = true;
+            // 
+            // btnXoaSP
+            // 
+            this.btnXoaSP.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnXoaSP.BackgroundImage")));
+            this.btnXoaSP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnXoaSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoaSP.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnXoaSP.Location = new System.Drawing.Point(610, 514);
+            this.btnXoaSP.Margin = new System.Windows.Forms.Padding(4);
+            this.btnXoaSP.Name = "btnXoaSP";
+            this.btnXoaSP.Size = new System.Drawing.Size(136, 57);
+            this.btnXoaSP.TabIndex = 130;
+            this.btnXoaSP.Text = "Xóa >>";
+            this.btnXoaSP.UseVisualStyleBackColor = true;
+            // 
+            // btnThemSP
+            // 
+            this.btnThemSP.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThemSP.BackgroundImage")));
+            this.btnThemSP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnThemSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemSP.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnThemSP.Location = new System.Drawing.Point(610, 433);
+            this.btnThemSP.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThemSP.Name = "btnThemSP";
+            this.btnThemSP.Size = new System.Drawing.Size(136, 57);
+            this.btnThemSP.TabIndex = 129;
+            this.btnThemSP.Text = "<< Thêm";
+            this.btnThemSP.UseVisualStyleBackColor = true;
+            // 
             // frmThemPN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1435, 604);
+            this.Controls.Add(this.btnTaoMoi);
+            this.Controls.Add(this.btnXoaSP);
+            this.Controls.Add(this.btnThemSP);
             this.Controls.Add(this.numericUpDownGN);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.numericUpDownSL);
@@ -634,5 +682,8 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.NumericUpDown numericUpDownSL;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btnTaoMoi;
+        private System.Windows.Forms.Button btnXoaSP;
+        private System.Windows.Forms.Button btnThemSP;
     }
 }
