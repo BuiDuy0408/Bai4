@@ -50,8 +50,25 @@
             this.lblDiaCHi = new System.Windows.Forms.Label();
             this.lblTenKH = new System.Windows.Forms.Label();
             this.lblMaKH = new System.Windows.Forms.Label();
+            this.groupBoxTimKiem = new System.Windows.Forms.GroupBox();
+            this.txtKHDiaChi = new System.Windows.Forms.TextBox();
+            this.lblKHDiaChi = new System.Windows.Forms.Label();
+            this.cmbKHLoai = new System.Windows.Forms.ComboBox();
+            this.lblKHLoai = new System.Windows.Forms.Label();
+            this.txtKHten = new System.Windows.Forms.TextBox();
+            this.lblKHten = new System.Windows.Forms.Label();
+            this.groupBoxThongKeKH = new System.Windows.Forms.GroupBox();
+            this.btnThongKe = new System.Windows.Forms.Button();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnKH = new System.Windows.Forms.Button();
             this.panelKH.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKH)).BeginInit();
+            this.groupBoxTimKiem.SuspendLayout();
+            this.groupBoxThongKeKH.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelKH
@@ -307,17 +324,191 @@
             this.lblMaKH.TabIndex = 8;
             this.lblMaKH.Text = "Mã Khách Hàng";
             // 
+            // groupBoxTimKiem
+            // 
+            this.groupBoxTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.groupBoxTimKiem.Controls.Add(this.txtKHDiaChi);
+            this.groupBoxTimKiem.Controls.Add(this.lblKHDiaChi);
+            this.groupBoxTimKiem.Controls.Add(this.cmbKHLoai);
+            this.groupBoxTimKiem.Controls.Add(this.lblKHLoai);
+            this.groupBoxTimKiem.Controls.Add(this.txtKHten);
+            this.groupBoxTimKiem.Controls.Add(this.lblKHten);
+            this.groupBoxTimKiem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBoxTimKiem.Location = new System.Drawing.Point(543, 222);
+            this.groupBoxTimKiem.Name = "groupBoxTimKiem";
+            this.groupBoxTimKiem.Size = new System.Drawing.Size(526, 250);
+            this.groupBoxTimKiem.TabIndex = 7;
+            this.groupBoxTimKiem.TabStop = false;
+            this.groupBoxTimKiem.Text = "Tìm Kiếm";
+            // 
+            // txtKHDiaChi
+            // 
+            this.txtKHDiaChi.Location = new System.Drawing.Point(344, 18);
+            this.txtKHDiaChi.Name = "txtKHDiaChi";
+            this.txtKHDiaChi.Size = new System.Drawing.Size(142, 20);
+            this.txtKHDiaChi.TabIndex = 5;
+            // 
+            // lblKHDiaChi
+            // 
+            this.lblKHDiaChi.AutoSize = true;
+            this.lblKHDiaChi.Location = new System.Drawing.Point(275, 21);
+            this.lblKHDiaChi.Name = "lblKHDiaChi";
+            this.lblKHDiaChi.Size = new System.Drawing.Size(41, 13);
+            this.lblKHDiaChi.TabIndex = 4;
+            this.lblKHDiaChi.Text = "Địa Chỉ";
+            // 
+            // cmbKHLoai
+            // 
+            this.cmbKHLoai.FormattingEnabled = true;
+            this.cmbKHLoai.Items.AddRange(new object[] {
+            "Khách Sộp",
+            "Khách Lẻ",
+            "Khách VIP"});
+            this.cmbKHLoai.Location = new System.Drawing.Point(94, 56);
+            this.cmbKHLoai.Name = "cmbKHLoai";
+            this.cmbKHLoai.Size = new System.Drawing.Size(127, 21);
+            this.cmbKHLoai.TabIndex = 3;
+            // 
+            // lblKHLoai
+            // 
+            this.lblKHLoai.AutoSize = true;
+            this.lblKHLoai.Location = new System.Drawing.Point(11, 59);
+            this.lblKHLoai.Name = "lblKHLoai";
+            this.lblKHLoai.Size = new System.Drawing.Size(45, 13);
+            this.lblKHLoai.TabIndex = 2;
+            this.lblKHLoai.Text = "Loại KH";
+            // 
+            // txtKHten
+            // 
+            this.txtKHten.Location = new System.Drawing.Point(94, 18);
+            this.txtKHten.Name = "txtKHten";
+            this.txtKHten.Size = new System.Drawing.Size(127, 20);
+            this.txtKHten.TabIndex = 1;
+            // 
+            // lblKHten
+            // 
+            this.lblKHten.AutoSize = true;
+            this.lblKHten.Location = new System.Drawing.Point(11, 21);
+            this.lblKHten.Name = "lblKHten";
+            this.lblKHten.Size = new System.Drawing.Size(44, 13);
+            this.lblKHten.TabIndex = 0;
+            this.lblKHten.Text = "Tên KH";
+            // 
+            // groupBoxThongKeKH
+            // 
+            this.groupBoxThongKeKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.groupBoxThongKeKH.Controls.Add(this.btnThongKe);
+            this.groupBoxThongKeKH.Controls.Add(this.dateTimePicker2);
+            this.groupBoxThongKeKH.Controls.Add(this.label2);
+            this.groupBoxThongKeKH.Controls.Add(this.dateTimePicker1);
+            this.groupBoxThongKeKH.Controls.Add(this.label1);
+            this.groupBoxThongKeKH.Controls.Add(this.btnRefresh);
+            this.groupBoxThongKeKH.Controls.Add(this.btnKH);
+            this.groupBoxThongKeKH.Dock = System.Windows.Forms.DockStyle.Left;
+            this.groupBoxThongKeKH.Location = new System.Drawing.Point(0, 222);
+            this.groupBoxThongKeKH.Name = "groupBoxThongKeKH";
+            this.groupBoxThongKeKH.Size = new System.Drawing.Size(543, 250);
+            this.groupBoxThongKeKH.TabIndex = 6;
+            this.groupBoxThongKeKH.TabStop = false;
+            this.groupBoxThongKeKH.Text = "Thống Kê";
+            // 
+            // btnThongKe
+            // 
+            this.btnThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnThongKe.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThongKe.BackgroundImage")));
+            this.btnThongKe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongKe.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnThongKe.Location = new System.Drawing.Point(404, 60);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(102, 23);
+            this.btnThongKe.TabIndex = 6;
+            this.btnThongKe.Text = "Thống Kê";
+            this.btnThongKe.UseVisualStyleBackColor = false;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(289, 59);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(109, 20);
+            this.dateTimePicker2.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(250, 64);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(27, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Đến";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(138, 59);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(109, 20);
+            this.dateTimePicker1.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Silver;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Location = new System.Drawing.Point(11, 64);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 15);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Mua hàng từ ngày ";
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.BackgroundImage")));
+            this.btnRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.Location = new System.Drawing.Point(462, 13);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(75, 31);
+            this.btnRefresh.TabIndex = 1;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            // 
+            // btnKH
+            // 
+            this.btnKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnKH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnKH.BackgroundImage")));
+            this.btnKH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnKH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKH.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKH.ForeColor = System.Drawing.Color.Red;
+            this.btnKH.Location = new System.Drawing.Point(11, 16);
+            this.btnKH.Name = "btnKH";
+            this.btnKH.Size = new System.Drawing.Size(199, 37);
+            this.btnKH.TabIndex = 0;
+            this.btnKH.Text = "Top 10 KH Mua Nhiều Nhất";
+            this.btnKH.UseVisualStyleBackColor = false;
+            // 
             // frmKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1069, 261);
+            this.ClientSize = new System.Drawing.Size(1069, 472);
+            this.Controls.Add(this.groupBoxTimKiem);
+            this.Controls.Add(this.groupBoxThongKeKH);
             this.Controls.Add(this.panelKH);
             this.Name = "frmKhachHang";
             this.Text = "frmKhachHang";
             this.panelKH.ResumeLayout(false);
             this.panelKH.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKH)).EndInit();
+            this.groupBoxTimKiem.ResumeLayout(false);
+            this.groupBoxTimKiem.PerformLayout();
+            this.groupBoxThongKeKH.ResumeLayout(false);
+            this.groupBoxThongKeKH.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -345,5 +536,20 @@
         private System.Windows.Forms.Label lblDiaCHi;
         private System.Windows.Forms.Label lblTenKH;
         private System.Windows.Forms.Label lblMaKH;
+        private System.Windows.Forms.GroupBox groupBoxTimKiem;
+        private System.Windows.Forms.TextBox txtKHDiaChi;
+        private System.Windows.Forms.Label lblKHDiaChi;
+        private System.Windows.Forms.ComboBox cmbKHLoai;
+        private System.Windows.Forms.Label lblKHLoai;
+        private System.Windows.Forms.TextBox txtKHten;
+        private System.Windows.Forms.Label lblKHten;
+        private System.Windows.Forms.GroupBox groupBoxThongKeKH;
+        private System.Windows.Forms.Button btnThongKe;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnKH;
     }
 }
