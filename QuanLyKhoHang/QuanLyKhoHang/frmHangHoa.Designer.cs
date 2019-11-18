@@ -33,6 +33,8 @@
             this.txttk_TenHH = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtNSX = new System.Windows.Forms.TextBox();
             this.txtTenSP = new System.Windows.Forms.TextBox();
             this.txtMaSP = new System.Windows.Forms.TextBox();
@@ -40,8 +42,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.txtSL = new System.Windows.Forms.TextBox();
+            this.txtGN = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtGB = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,6 +90,10 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.groupBox2.Controls.Add(this.txtGB);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.txtGN);
+            this.groupBox2.Controls.Add(this.txtSL);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.txtNSX);
@@ -103,6 +111,26 @@
             this.groupBox2.TabIndex = 92;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin sản phẩm";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(644, 70);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(66, 17);
+            this.label11.TabIndex = 78;
+            this.label11.Text = "Giá nhập";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(644, 33);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 17);
+            this.label4.TabIndex = 58;
+            this.label4.Text = "Số lượng";
             // 
             // txtNSX
             // 
@@ -169,25 +197,39 @@
             this.label1.TabIndex = 47;
             this.label1.Text = "Mã HH";
             // 
-            // label4
+            // txtSL
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(644, 33);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 17);
-            this.label4.TabIndex = 58;
-            this.label4.Text = "Số lượng";
+            this.txtSL.Location = new System.Drawing.Point(716, 33);
+            this.txtSL.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSL.Name = "txtSL";
+            this.txtSL.Size = new System.Drawing.Size(261, 22);
+            this.txtSL.TabIndex = 85;
             // 
-            // label11
+            // txtGN
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(644, 70);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(66, 17);
-            this.label11.TabIndex = 78;
-            this.label11.Text = "Giá nhập";
+            this.txtGN.Location = new System.Drawing.Point(716, 70);
+            this.txtGN.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGN.Name = "txtGN";
+            this.txtGN.Size = new System.Drawing.Size(152, 22);
+            this.txtGN.TabIndex = 86;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(644, 111);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 17);
+            this.label5.TabIndex = 87;
+            this.label5.Text = "Giá bán";
+            // 
+            // txtGB
+            // 
+            this.txtGB.Location = new System.Drawing.Point(716, 108);
+            this.txtGB.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGB.Name = "txtGB";
+            this.txtGB.Size = new System.Drawing.Size(152, 22);
+            this.txtGB.TabIndex = 88;
             // 
             // frmHangHoa
             // 
@@ -225,5 +267,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtGB;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtGN;
+        private System.Windows.Forms.TextBox txtSL;
     }
 }
