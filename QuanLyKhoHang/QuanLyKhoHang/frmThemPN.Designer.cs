@@ -64,6 +64,10 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.giamSôLươngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.numericUpDownGN = new System.Windows.Forms.NumericUpDown();
+            this.label11 = new System.Windows.Forms.Label();
+            this.numericUpDownSL = new System.Windows.Forms.NumericUpDown();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGX)).BeginInit();
@@ -71,6 +75,8 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSPN)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSL)).BeginInit();
             this.SuspendLayout();
             // 
             // cboTenNCC
@@ -482,11 +488,82 @@
             this.giamSôLươngToolStripMenuItem.Size = new System.Drawing.Size(154, 25);
             this.giamSôLươngToolStripMenuItem.Text = "Giảm số lượng";
             // 
+            // numericUpDownGN
+            // 
+            this.numericUpDownGN.Location = new System.Drawing.Point(609, 403);
+            this.numericUpDownGN.Margin = new System.Windows.Forms.Padding(4);
+            this.numericUpDownGN.Maximum = new decimal(new int[] {
+            1410065407,
+            2,
+            0,
+            0});
+            this.numericUpDownGN.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownGN.Name = "numericUpDownGN";
+            this.numericUpDownGN.Size = new System.Drawing.Size(136, 22);
+            this.numericUpDownGN.TabIndex = 128;
+            this.numericUpDownGN.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDownGN.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label11.Location = new System.Drawing.Point(607, 375);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(68, 19);
+            this.label11.TabIndex = 127;
+            this.label11.Text = "Giá nhập";
+            // 
+            // numericUpDownSL
+            // 
+            this.numericUpDownSL.Location = new System.Drawing.Point(607, 327);
+            this.numericUpDownSL.Margin = new System.Windows.Forms.Padding(4);
+            this.numericUpDownSL.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.numericUpDownSL.Name = "numericUpDownSL";
+            this.numericUpDownSL.Size = new System.Drawing.Size(139, 22);
+            this.numericUpDownSL.TabIndex = 126;
+            this.numericUpDownSL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDownSL.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label12.Location = new System.Drawing.Point(607, 301);
+            this.label12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(71, 19);
+            this.label12.TabIndex = 125;
+            this.label12.Text = "Số Lượng";
+            // 
             // frmThemPN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1435, 604);
+            this.Controls.Add(this.numericUpDownGN);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.numericUpDownSL);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.comboBox1);
@@ -509,6 +586,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvSPN)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSL)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -551,5 +630,9 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem tangToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem giamSôLươngToolStripMenuItem;
+        private System.Windows.Forms.NumericUpDown numericUpDownGN;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.NumericUpDown numericUpDownSL;
+        private System.Windows.Forms.Label label12;
     }
 }
