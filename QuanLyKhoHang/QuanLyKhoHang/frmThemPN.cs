@@ -28,9 +28,18 @@ namespace QuanLyKhoHang
         long giaxuat;
         string nsx;
         string thongtin;
-        private void FrmThemPN_Load(object sender, EventArgs e)
+        public void HienThi()
         {
-
+            dgvSP.DataSource = hh.ShowHangHoa("");
+        }
+        private void frmThemPN_Load(object sender, EventArgs e)
+        {
+            HienThi();
+            cboTenNCC.DataSource = ncc.ShowNCC("");
+            cboTenNCC.DisplayMember = "TenNCC";
+            cboTenNCC.ValueMember = "MaNCC";
+            cboTenNCC.SelectedValue = "MaNCC";
+            cboTenNCC.SelectedIndex = 0;
         }
 
         private void TxtTenSP_TextChanged(object sender, EventArgs e)
