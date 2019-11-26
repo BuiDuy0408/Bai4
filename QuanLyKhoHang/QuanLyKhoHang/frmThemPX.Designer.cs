@@ -42,11 +42,14 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.numericUpDownSL = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
+            this.numericUpDownGN = new System.Windows.Forms.NumericUpDown();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSPX)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGN)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -148,6 +151,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.numericUpDownGN);
+            this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.numericUpDownSL);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Location = new System.Drawing.Point(336, 81);
@@ -186,6 +191,40 @@
             this.label6.TabIndex = 130;
             this.label6.Text = "Số Lượng";
             // 
+            // numericUpDownGN
+            // 
+            this.numericUpDownGN.Location = new System.Drawing.Point(28, 94);
+            this.numericUpDownGN.Maximum = new decimal(new int[] {
+            1410065407,
+            2,
+            0,
+            0});
+            this.numericUpDownGN.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownGN.Name = "numericUpDownGN";
+            this.numericUpDownGN.Size = new System.Drawing.Size(102, 20);
+            this.numericUpDownGN.TabIndex = 133;
+            this.numericUpDownGN.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDownGN.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label11.Location = new System.Drawing.Point(26, 71);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(48, 15);
+            this.label11.TabIndex = 132;
+            this.label11.Text = "Giá xuất";
+            // 
             // frmThemPX
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -204,6 +243,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGN)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -224,5 +264,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.NumericUpDown numericUpDownSL;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.NumericUpDown numericUpDownGN;
+        private System.Windows.Forms.Label label11;
     }
 }
