@@ -146,5 +146,20 @@ namespace QuanLyKhoHang
         {
 
         }
+
+        private void Label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GroupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DomainUpDown2_SelectedItemChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
