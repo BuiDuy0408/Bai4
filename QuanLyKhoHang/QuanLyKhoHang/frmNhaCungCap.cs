@@ -144,6 +144,41 @@ namespace QuanLyKhoHang
             this.Close();
         }
 
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                txtMaNCC.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                txtTenNCC.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                txtDiaChi.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                txtSDT.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+            }
+            catch { }
+        }
+        public void TimKiem(string DieuKien)
+        {
+            dataGridView1.DataSource = ncc.ShowNCC("WHERE " + DieuKien + " LIKE N'%" + txtTK.Text + "%'");
+            for (int i = 0; i < dataGridView1.RowCount - 1; i++)
+            {
+                dataGridView1.Rows[i].Cells[0].Value = (i + 1).ToString();
+            }
+        }
 
+        private void txtTK_TextChanged(object sender, EventArgs e)
+        {
+            if (txtTK.Text == "") HienThi();
+            else
+            {
+                if (cboTK.SelectedIndex == 0) TimKiem("MaNCC");
+                else if (cboTK.SelectedIndex == 1) TimKiem("TenNCC");
+                else if (cboTK.SelectedIndex == 2) TimKiem("DiaChi");
+                else if (cboTK.SelectedIndex == 3) TimKiem("SDT");
+            }
+        }
+
+        private void txtTK_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
