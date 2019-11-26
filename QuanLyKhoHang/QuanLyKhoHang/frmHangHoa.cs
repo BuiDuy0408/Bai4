@@ -16,5 +16,20 @@ namespace QuanLyKhoHang
         {
             InitializeComponent();
         }
+
+        private void label9_BackColorChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txttk_TenHH_BindingContextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
