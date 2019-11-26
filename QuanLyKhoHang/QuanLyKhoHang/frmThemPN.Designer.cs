@@ -179,7 +179,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox3.Controls.Add(this.numericUpDown3);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.numericUpDownGX);
@@ -330,6 +330,7 @@
             this.txtTenSP.Name = "txtTenSP";
             this.txtTenSP.Size = new System.Drawing.Size(295, 22);
             this.txtTenSP.TabIndex = 101;
+            this.txtTenSP.TextChanged += new System.EventHandler(this.TxtTenSP_TextChanged);
             // 
             // label7
             // 
