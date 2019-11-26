@@ -144,6 +144,8 @@
             this.dataGridViewTextBoxColumn63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.domainUpDown2 = new System.Windows.Forms.DomainUpDown();
+            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
+            this.eventLog1 = new System.Diagnostics.EventLog();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGX)).BeginInit();
@@ -153,6 +155,7 @@
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
             this.SuspendLayout();
             // 
             // cboTenNCC
@@ -1266,11 +1269,23 @@
             this.domainUpDown2.Text = "domainUpDown2";
             this.domainUpDown2.SelectedItemChanged += new System.EventHandler(this.DomainUpDown2_SelectedItemChanged);
             // 
+            // hScrollBar1
+            // 
+            this.hScrollBar1.Location = new System.Drawing.Point(912, 284);
+            this.hScrollBar1.Name = "hScrollBar1";
+            this.hScrollBar1.Size = new System.Drawing.Size(80, 21);
+            this.hScrollBar1.TabIndex = 137;
+            // 
+            // eventLog1
+            // 
+            this.eventLog1.SynchronizingObject = this;
+            // 
             // frmThemPN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1435, 604);
+            this.Controls.Add(this.hScrollBar1);
             this.Controls.Add(this.domainUpDown2);
             this.Controls.Add(this.domainUpDown1);
             this.Controls.Add(this.numericUpDownGN);
@@ -1304,6 +1319,7 @@
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1426,5 +1442,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn63;
         private System.Windows.Forms.DomainUpDown domainUpDown1;
         private System.Windows.Forms.DomainUpDown domainUpDown2;
+        private System.Windows.Forms.HScrollBar hScrollBar1;
+        private System.Diagnostics.EventLog eventLog1;
     }
 }
