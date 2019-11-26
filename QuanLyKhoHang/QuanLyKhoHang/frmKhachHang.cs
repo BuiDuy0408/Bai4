@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessLogic;
 
 namespace QuanLyKhoHang
 {
@@ -18,33 +19,14 @@ namespace QuanLyKhoHang
             InitializeComponent();
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnLuu_Click(object sender, EventArgs e)
-        {
-
-        }
         ChiNhanh kh = new ChiNhanh();
         int temp = 0;
 
         private void KhachHang_Load(object sender, EventArgs e)
         {
             DKOThongTin(false);
-            //setNULL();
-            //HienThiDGV();
+            setNULL();
+            HienThiDGV();
         }
 
         public void DKOThongTin(bool bl)
@@ -70,6 +52,7 @@ namespace QuanLyKhoHang
                 i++;
             }
         }
+
         private void dgvKhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             btnSua.Enabled = true;
@@ -91,7 +74,7 @@ namespace QuanLyKhoHang
             }
         }
 
-        private void btnThem_Click(object sender, EventArgs e,string a)
+        private void btnThem_Click(object sender, EventArgs e)
         {
             setNULL();
             DKOThongTin(true);
@@ -100,6 +83,7 @@ namespace QuanLyKhoHang
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
         }
+
         private void btnXoa_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có chắc muốn xóa?", "Cảnh báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
@@ -145,5 +129,63 @@ namespace QuanLyKhoHang
             HienThiDGV();
         }
 
+        private void txtKHten_TextChanged(object sender, EventArgs e)
+        {
+            if (txtKHten.Text != null)
+            {
+                dgvKhachHang.DataSource = kh.SearchKH(txtKHten.Text);
+            }
+            else txtKHten.Text = "";
+        }
+
+        private void cmbKHLoai_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbKHLoai.Text != null)
+            {
+                dgvKhachHang.DataSource = kh.SearchLoaiKH(cmbKHLoai.Text);
+            }
+            else cmbKHLoai.Text = "";
+        }
+
+        private void txtKHDiaChi_TextChanged(object sender, EventArgs e)
+        {
+            if (txtKHDiaChi.Text != null)
+            {
+                dgvKhachHang.DataSource = kh.SearchDCKH(txtKHDiaChi.Text);
+            }
+            else txtKHDiaChi.Text = "";
+        }
+
+        private void btnKH_Click(object sender, EventArgs e)
+        {
+            dgvKhachHang.DataSource = kh.Show10KH();
+            int i = 0;
+            while (i < dgvKhachHang.Rows.Count - 1)
+            {
+                dgvKhachHang.Rows[i].Cells[0].Value = (i + 1).ToString();
+                i++;
+            }
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            HienThiDGV();
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            dgvKhachHang.DataSource = kh.ShowKHTHeoNgay(DateTime.Parse(dateTimePicker1.Text), DateTime.Parse(dateTimePicker2.Text));
+            int i = 0;
+            while (i < dgvKhachHang.Rows.Count - 1)
+            {
+                dgvKhachHang.Rows[i].Cells[0].Value = (i + 1).ToString();
+                i++;
+            }
+        }
+
+        private void panelKH_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
