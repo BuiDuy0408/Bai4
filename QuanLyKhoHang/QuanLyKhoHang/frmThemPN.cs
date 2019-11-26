@@ -128,6 +128,19 @@ namespace QuanLyKhoHang
                 dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[3].Value = int.Parse(numericUpDownSL.Value.ToString()) * long.Parse(numericUpDownGN.Value.ToString());
             }
         }
+        int indexSPN = 0;
+        private void btnXoaSP_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dgvSPN.Rows.RemoveAt(indexSPN);
+                indexSPN--;
+            }
+            catch
+            {
+
+            }
+        }
         private void TxtTenSP_TextChanged(object sender, EventArgs e)
         {
 
