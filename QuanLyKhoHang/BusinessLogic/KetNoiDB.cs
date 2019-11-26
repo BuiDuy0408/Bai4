@@ -15,5 +15,6 @@ namespace BusinessLogic
         {
             return (@"Data Source=NHOXHOANGANH\SQLEXPRESS;Initial Catalog=QL_KhoHang;Integrated Security=True");
         }
+
     }
 }
