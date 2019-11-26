@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmThemPX));
             this.panel1 = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,6 +45,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.numericUpDownGN = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
+            this.btnThemSP = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSPX)).BeginInit();
@@ -151,6 +153,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnThemSP);
             this.groupBox2.Controls.Add(this.numericUpDownGN);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.numericUpDownSL);
@@ -225,6 +228,19 @@
             this.label11.TabIndex = 132;
             this.label11.Text = "Giá xuất";
             // 
+            // btnThemSP
+            // 
+            this.btnThemSP.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThemSP.BackgroundImage")));
+            this.btnThemSP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnThemSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemSP.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnThemSP.Location = new System.Drawing.Point(26, 129);
+            this.btnThemSP.Name = "btnThemSP";
+            this.btnThemSP.Size = new System.Drawing.Size(102, 24);
+            this.btnThemSP.TabIndex = 134;
+            this.btnThemSP.Text = "<< Thêm";
+            this.btnThemSP.UseVisualStyleBackColor = true;
+            // 
             // frmThemPX
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -266,5 +282,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.NumericUpDown numericUpDownGN;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btnThemSP;
     }
 }
