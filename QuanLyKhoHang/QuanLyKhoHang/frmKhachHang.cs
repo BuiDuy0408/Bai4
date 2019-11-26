@@ -144,6 +144,42 @@ namespace QuanLyKhoHang
             DKOThongTin(false);
             HienThiDGV();
         }
+        private void txtKHten_TextChanged(object sender, EventArgs e)
+        {
+            if (txtKHten.Text != null)
+            {
+                dgvKhachHang.DataSource = kh.SearchKH(txtKHten.Text);
+            }
+            else txtKHten.Text = "";
+        }
 
+        private void cmbKHLoai_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbKHLoai.Text != null)
+            {
+                dgvKhachHang.DataSource = kh.SearchLoaiKH(cmbKHLoai.Text);
+            }
+            else cmbKHLoai.Text = "";
+        }
+
+        private void txtKHDiaChi_TextChanged(object sender, EventArgs e)
+        {
+            if (txtKHDiaChi.Text != null)
+            {
+                dgvKhachHang.DataSource = kh.SearchDCKH(txtKHDiaChi.Text);
+            }
+            else txtKHDiaChi.Text = "";
+        }
+
+        private void btnKH_Click(object sender, EventArgs e)
+        {
+            dgvKhachHang.DataSource = kh.Show10KH();
+            int i = 0;
+            while (i < dgvKhachHang.Rows.Count - 1)
+            {
+                dgvKhachHang.Rows[i].Cells[0].Value = (i + 1).ToString();
+                i++;
+            }
+        }
     }
 }
