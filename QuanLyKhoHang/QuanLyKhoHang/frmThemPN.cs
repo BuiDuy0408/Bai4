@@ -105,7 +105,10 @@ namespace QuanLyKhoHang
             catch { }
             SetNull();
         }
-
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            SetNull();
+        }
         private void TxtTenSP_TextChanged(object sender, EventArgs e)
         {
 
