@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BusinessLogic;
+
 
 namespace QuanLyKhoHang
 {
@@ -83,7 +83,7 @@ namespace QuanLyKhoHang
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
         }
-<<<<<<< HEAD
+
         //private void btnXoa_Click(object sender, EventArgs e)
         //{
         //    if (MessageBox.Show("Bạn có chắc muốn xóa?", "Cảnh báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
@@ -128,7 +128,6 @@ namespace QuanLyKhoHang
         //    DKOThongTin(false);
         //    HienThiDGV();
         //}
-=======
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
@@ -175,7 +174,7 @@ namespace QuanLyKhoHang
             HienThiDGV();
         }
 
->>>>>>> 6282032e73b32aed940c7c65076dbbeab47fadf9
+
         private void txtKHten_TextChanged(object sender, EventArgs e)
         {
             if (txtKHten.Text != null)
