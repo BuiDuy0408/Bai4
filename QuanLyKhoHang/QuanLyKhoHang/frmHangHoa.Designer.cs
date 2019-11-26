@@ -349,6 +349,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1054, 150);
             this.dataGridView1.TabIndex = 94;
+            this.dataGridView1.BackgroundColorChanged += new System.EventHandler(this.label9_BackColorChanged);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // frmHangHoa
