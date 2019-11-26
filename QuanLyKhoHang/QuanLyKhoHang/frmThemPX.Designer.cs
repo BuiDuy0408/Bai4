@@ -40,9 +40,13 @@
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.numericUpDownSL = new System.Windows.Forms.NumericUpDown();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSPX)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSL)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -144,11 +148,43 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.numericUpDownSL);
+            this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Location = new System.Drawing.Point(336, 81);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(185, 308);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
+            // 
+            // numericUpDownSL
+            // 
+            this.numericUpDownSL.Location = new System.Drawing.Point(26, 37);
+            this.numericUpDownSL.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.numericUpDownSL.Name = "numericUpDownSL";
+            this.numericUpDownSL.Size = new System.Drawing.Size(104, 20);
+            this.numericUpDownSL.TabIndex = 131;
+            this.numericUpDownSL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDownSL.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label6.Location = new System.Drawing.Point(26, 16);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(55, 15);
+            this.label6.TabIndex = 130;
+            this.label6.Text = "Số Lượng";
             // 
             // frmThemPX
             // 
@@ -165,6 +201,9 @@
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSPX)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSL)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -183,5 +222,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.NumericUpDown numericUpDownSL;
+        private System.Windows.Forms.Label label6;
     }
 }
