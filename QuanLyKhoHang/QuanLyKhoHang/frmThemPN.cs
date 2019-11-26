@@ -48,6 +48,27 @@ namespace QuanLyKhoHang
             cboTenNCC.SelectedValue = "MaNCC";
             cboTenNCC.SelectedIndex = 0;
         }
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            string tenhh = txtTenSP.Text;
+            soluong = Convert.ToInt32(numericUpDown2.Value.ToString());
+            gianhap = long.Parse(numericUpDown3.Value.ToString());
+            giaxuat = long.Parse(numericUpDownGX.Value.ToString());
+            nsx = txtNSX.Text;
+            thongtin = txtMoTa.Text;
+            //string ma = hh.InsertHangHoa(tenhh, soluong, gianhap, giaxuat, nsx, thongtin);
+            MessageBox.Show("Thêm dữ liệu thành công !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            HienThi();
+            //if (dgvSP.SelectedRows.Count > 0)
+            //{
+            //    dgvSPN.Rows.AddRange(new DataGridViewRow());
+            //    dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[1].Value = ma;
+            //    dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[2].Value = soluong;
+            //    dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[3].Value = gianhap;
+            //    dgvSPN.Rows[dgvSPN.RowCount - 2].Cells[4].Value = soluong * gianhap;
+            //}
+        }
+
 
         private void TxtTenSP_TextChanged(object sender, EventArgs e)
         {
