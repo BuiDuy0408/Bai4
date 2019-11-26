@@ -101,7 +101,7 @@
             this.dgvKhachHang.Location = new System.Drawing.Point(0, 318);
             this.dgvKhachHang.Name = "dgvKhachHang";
             this.dgvKhachHang.ReadOnly = true;
-            this.dgvKhachHang.Size = new System.Drawing.Size(1063, 215);
+            this.dgvKhachHang.Size = new System.Drawing.Size(1171, 215);
             this.dgvKhachHang.TabIndex = 6;
             this.dgvKhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhachHang_CellClick);
             // 
@@ -244,7 +244,7 @@
             this.panelButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelButton.Location = new System.Drawing.Point(0, 222);
             this.panelButton.Name = "panelButton";
-            this.panelButton.Size = new System.Drawing.Size(1063, 96);
+            this.panelButton.Size = new System.Drawing.Size(1171, 96);
             this.panelButton.TabIndex = 5;
             // 
             // groupBoxTimKiem
@@ -260,7 +260,7 @@
             this.groupBoxTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBoxTimKiem.Location = new System.Drawing.Point(543, 0);
             this.groupBoxTimKiem.Name = "groupBoxTimKiem";
-            this.groupBoxTimKiem.Size = new System.Drawing.Size(518, 94);
+            this.groupBoxTimKiem.Size = new System.Drawing.Size(626, 94);
             this.groupBoxTimKiem.TabIndex = 1;
             this.groupBoxTimKiem.TabStop = false;
             this.groupBoxTimKiem.Text = "Tìm Kiếm";
@@ -545,7 +545,7 @@
             this.panelKH.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panelKH.Location = new System.Drawing.Point(0, 0);
             this.panelKH.Name = "panelKH";
-            this.panelKH.Size = new System.Drawing.Size(1063, 222);
+            this.panelKH.Size = new System.Drawing.Size(1171, 222);
             this.panelKH.TabIndex = 4;
             this.panelKH.Paint += new System.Windows.Forms.PaintEventHandler(this.panelKH_Paint);
             // 
@@ -566,7 +566,7 @@
             this.pictureBoxKH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxKH.BackgroundImage")));
             this.pictureBoxKH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxKH.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBoxKH.Location = new System.Drawing.Point(821, 5);
+            this.pictureBoxKH.Location = new System.Drawing.Point(931, 3);
             this.pictureBoxKH.Name = "pictureBoxKH";
             this.pictureBoxKH.Size = new System.Drawing.Size(237, 210);
             this.pictureBoxKH.TabIndex = 22;
@@ -619,7 +619,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1063, 533);
+            this.ClientSize = new System.Drawing.Size(1171, 533);
             this.Controls.Add(this.dgvKhachHang);
             this.Controls.Add(this.panelButton);
             this.Controls.Add(this.panelKH);
