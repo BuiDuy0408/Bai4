@@ -61,9 +61,6 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.tangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.giamSôLươngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.btnTaoMoi = new System.Windows.Forms.Button();
@@ -142,15 +139,12 @@
             this.dataGridViewTextBoxColumn61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown2 = new System.Windows.Forms.DomainUpDown();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSPN)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGN)).BeginInit();
             this.SuspendLayout();
@@ -480,7 +474,6 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dgvSPN);
-            this.groupBox1.Controls.Add(this.menuStrip1);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Maroon;
             this.groupBox1.Location = new System.Drawing.Point(1, 275);
@@ -503,12 +496,12 @@
             this.Column6});
             this.dgvSPN.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvSPN.GridColor = System.Drawing.Color.Maroon;
-            this.dgvSPN.Location = new System.Drawing.Point(4, 55);
+            this.dgvSPN.Location = new System.Drawing.Point(4, 26);
             this.dgvSPN.Margin = new System.Windows.Forms.Padding(4);
             this.dgvSPN.Name = "dgvSPN";
             this.dgvSPN.RowHeadersWidth = 51;
             this.dgvSPN.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSPN.Size = new System.Drawing.Size(589, 309);
+            this.dgvSPN.Size = new System.Drawing.Size(589, 338);
             this.dgvSPN.TabIndex = 1;
             // 
             // Column2
@@ -538,34 +531,6 @@
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
             this.Column6.Width = 125;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tangToolStripMenuItem,
-            this.giamSôLươngToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(4, 26);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(589, 29);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // tangToolStripMenuItem
-            // 
-            this.tangToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("tangToolStripMenuItem.Image")));
-            this.tangToolStripMenuItem.Name = "tangToolStripMenuItem";
-            this.tangToolStripMenuItem.Size = new System.Drawing.Size(152, 25);
-            this.tangToolStripMenuItem.Text = "Tăng số lượng";
-            // 
-            // giamSôLươngToolStripMenuItem
-            // 
-            this.giamSôLươngToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("giamSôLươngToolStripMenuItem.Image")));
-            this.giamSôLươngToolStripMenuItem.Name = "giamSôLươngToolStripMenuItem";
-            this.giamSôLươngToolStripMenuItem.Size = new System.Drawing.Size(154, 25);
-            this.giamSôLươngToolStripMenuItem.Text = "Giảm số lượng";
             // 
             // label11
             // 
@@ -1249,30 +1214,11 @@
             this.dataGridViewTextBoxColumn63.Name = "dataGridViewTextBoxColumn63";
             this.dataGridViewTextBoxColumn63.Width = 150;
             // 
-            // domainUpDown1
-            // 
-            this.domainUpDown1.Location = new System.Drawing.Point(1249, 275);
-            this.domainUpDown1.Name = "domainUpDown1";
-            this.domainUpDown1.Size = new System.Drawing.Size(120, 22);
-            this.domainUpDown1.TabIndex = 135;
-            this.domainUpDown1.Text = "domainUpDown1";
-            // 
-            // domainUpDown2
-            // 
-            this.domainUpDown2.Location = new System.Drawing.Point(1053, 274);
-            this.domainUpDown2.Name = "domainUpDown2";
-            this.domainUpDown2.Size = new System.Drawing.Size(120, 22);
-            this.domainUpDown2.TabIndex = 136;
-            this.domainUpDown2.Text = "domainUpDown2";
-            this.domainUpDown2.SelectedItemChanged += new System.EventHandler(this.DomainUpDown2_SelectedItemChanged);
-            // 
             // frmThemPN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1435, 604);
-            this.Controls.Add(this.domainUpDown2);
-            this.Controls.Add(this.domainUpDown1);
             this.Controls.Add(this.numericUpDownGN);
             this.Controls.Add(this.numericUpDownSL);
             this.Controls.Add(this.groupBox2);
@@ -1298,10 +1244,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSPN)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGN)).EndInit();
             this.ResumeLayout(false);
@@ -1334,9 +1277,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem tangToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem giamSôLươngToolStripMenuItem;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btnTaoMoi;
@@ -1424,7 +1364,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn61;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn62;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn63;
-        private System.Windows.Forms.DomainUpDown domainUpDown1;
-        private System.Windows.Forms.DomainUpDown domainUpDown2;
     }
 }
