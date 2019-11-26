@@ -59,32 +59,24 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.giamSôLươngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.numericUpDownGN = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
-            this.numericUpDownSL = new System.Windows.Forms.NumericUpDown();
             this.label12 = new System.Windows.Forms.Label();
             this.btnTaoMoi = new System.Windows.Forms.Button();
             this.btnXoaSP = new System.Windows.Forms.Button();
             this.btnThemSP = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dgvSP = new System.Windows.Forms.DataGridView();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvSPN = new System.Windows.Forms.DataGridView();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSL)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSPN)).BeginInit();
             this.SuspendLayout();
             // 
             // cboTenNCC
@@ -409,6 +401,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dgvSPN);
             this.groupBox1.Controls.Add(this.menuStrip1);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Maroon;
@@ -449,30 +442,6 @@
             this.giamSôLươngToolStripMenuItem.Size = new System.Drawing.Size(154, 25);
             this.giamSôLươngToolStripMenuItem.Text = "Giảm số lượng";
             // 
-            // numericUpDownGN
-            // 
-            this.numericUpDownGN.Location = new System.Drawing.Point(609, 403);
-            this.numericUpDownGN.Margin = new System.Windows.Forms.Padding(4);
-            this.numericUpDownGN.Maximum = new decimal(new int[] {
-            1410065407,
-            2,
-            0,
-            0});
-            this.numericUpDownGN.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDownGN.Name = "numericUpDownGN";
-            this.numericUpDownGN.Size = new System.Drawing.Size(136, 22);
-            this.numericUpDownGN.TabIndex = 128;
-            this.numericUpDownGN.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numericUpDownGN.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -484,25 +453,6 @@
             this.label11.Size = new System.Drawing.Size(68, 19);
             this.label11.TabIndex = 127;
             this.label11.Text = "Giá nhập";
-            // 
-            // numericUpDownSL
-            // 
-            this.numericUpDownSL.Location = new System.Drawing.Point(607, 327);
-            this.numericUpDownSL.Margin = new System.Windows.Forms.Padding(4);
-            this.numericUpDownSL.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.numericUpDownSL.Name = "numericUpDownSL";
-            this.numericUpDownSL.Size = new System.Drawing.Size(139, 22);
-            this.numericUpDownSL.TabIndex = 126;
-            this.numericUpDownSL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numericUpDownSL.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // label12
             // 
@@ -560,7 +510,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dgvSP);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Maroon;
             this.groupBox2.Location = new System.Drawing.Point(756, 301);
@@ -572,83 +521,52 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sách sản phẩm";
             // 
-            // dgvSP
+            // Column6
             // 
-            this.dgvSP.BackgroundColor = System.Drawing.Color.Teal;
-            this.dgvSP.ColumnHeadersHeight = 29;
-            this.dgvSP.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column8,
-            this.Column9,
-            this.Column10,
-            this.Column15,
-            this.Column11,
-            this.Column13,
-            this.Column12});
-            this.dgvSP.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvSP.GridColor = System.Drawing.Color.Maroon;
-            this.dgvSP.Location = new System.Drawing.Point(4, 26);
-            this.dgvSP.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvSP.Name = "dgvSP";
-            this.dgvSP.RowHeadersWidth = 51;
-            this.dgvSP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSP.Size = new System.Drawing.Size(739, 338);
-            this.dgvSP.TabIndex = 0;
+            this.Column6.HeaderText = "Thành Tiền";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 125;
             // 
-            // Column8
+            // Column5
             // 
-            this.Column8.DataPropertyName = "MaHH";
-            this.Column8.HeaderText = "Mã HH";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 125;
+            this.Column5.HeaderText = "Giá Nhập";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
             // 
-            // Column9
+            // Column4
             // 
-            this.Column9.DataPropertyName = "TenHH";
-            this.Column9.HeaderText = "Tên HH";
-            this.Column9.MinimumWidth = 6;
-            this.Column9.Name = "Column9";
-            this.Column9.Width = 125;
+            this.Column4.HeaderText = "Số Lượng";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 60;
             // 
-            // Column10
+            // Column2
             // 
-            this.Column10.DataPropertyName = "SoLuong";
-            this.Column10.HeaderText = "Số Lượng";
-            this.Column10.MinimumWidth = 6;
-            this.Column10.Name = "Column10";
-            this.Column10.Width = 80;
+            this.Column2.HeaderText = "Mã HH";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
             // 
-            // Column15
+            // dgvSPN
             // 
-            this.Column15.DataPropertyName = "GiaNhap";
-            this.Column15.HeaderText = "Giá Nhập";
-            this.Column15.MinimumWidth = 6;
-            this.Column15.Name = "Column15";
-            this.Column15.Width = 125;
-            // 
-            // Column11
-            // 
-            this.Column11.DataPropertyName = "GiaXuat";
-            this.Column11.HeaderText = "Giá Xuất";
-            this.Column11.MinimumWidth = 6;
-            this.Column11.Name = "Column11";
-            this.Column11.Width = 125;
-            // 
-            // Column13
-            // 
-            this.Column13.DataPropertyName = "NSX";
-            this.Column13.HeaderText = "NSX";
-            this.Column13.MinimumWidth = 6;
-            this.Column13.Name = "Column13";
-            this.Column13.Width = 60;
-            // 
-            // Column12
-            // 
-            this.Column12.DataPropertyName = "ThongTin";
-            this.Column12.HeaderText = "Thông Tin";
-            this.Column12.MinimumWidth = 6;
-            this.Column12.Name = "Column12";
-            this.Column12.Width = 150;
+            this.dgvSPN.BackgroundColor = System.Drawing.Color.Teal;
+            this.dgvSPN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSPN.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column2,
+            this.Column4,
+            this.Column5,
+            this.Column6});
+            this.dgvSPN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvSPN.GridColor = System.Drawing.Color.Maroon;
+            this.dgvSPN.Location = new System.Drawing.Point(4, 55);
+            this.dgvSPN.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvSPN.Name = "dgvSPN";
+            this.dgvSPN.RowHeadersWidth = 51;
+            this.dgvSPN.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvSPN.Size = new System.Drawing.Size(589, 309);
+            this.dgvSPN.TabIndex = 1;
             // 
             // frmThemPN
             // 
@@ -659,9 +577,7 @@
             this.Controls.Add(this.btnTaoMoi);
             this.Controls.Add(this.btnXoaSP);
             this.Controls.Add(this.btnThemSP);
-            this.Controls.Add(this.numericUpDownGN);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.numericUpDownSL);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
@@ -683,10 +599,7 @@
             this.groupBox1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSL)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSPN)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -720,25 +633,20 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem tangToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem giamSôLươngToolStripMenuItem;
-        private System.Windows.Forms.NumericUpDown numericUpDownGN;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.NumericUpDown numericUpDownSL;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btnTaoMoi;
         private System.Windows.Forms.Button btnXoaSP;
         private System.Windows.Forms.Button btnThemSP;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dgvSP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.TextBox txtMoTa;
+        private System.Windows.Forms.DataGridView dgvSPN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }
