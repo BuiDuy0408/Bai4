@@ -49,6 +49,7 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnThoat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -177,18 +178,18 @@
             // btnHuy
             // 
             this.btnHuy.Enabled = false;
-            this.btnHuy.Location = new System.Drawing.Point(618, 152);
+            this.btnHuy.Location = new System.Drawing.Point(609, 152);
             this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(75, 35);
+            this.btnHuy.Size = new System.Drawing.Size(92, 35);
             this.btnHuy.TabIndex = 87;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(76, 152);
+            this.btnThem.Location = new System.Drawing.Point(61, 152);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 35);
+            this.btnThem.Size = new System.Drawing.Size(90, 35);
             this.btnThem.TabIndex = 86;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -202,10 +203,10 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(29, 199);
+            this.dataGridView1.Location = new System.Drawing.Point(76, 199);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(689, 232);
+            this.dataGridView1.Size = new System.Drawing.Size(554, 204);
             this.dataGridView1.TabIndex = 91;
             // 
             // Column1
@@ -236,12 +237,22 @@
             this.Column4.HeaderText = "SĐT";
             this.Column4.Name = "Column4";
             // 
+            // btnThoat
+            // 
+            this.btnThoat.Location = new System.Drawing.Point(636, 396);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(75, 35);
+            this.btnThoat.TabIndex = 92;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            // 
             // frmNhaCungCap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(762, 443);
+            this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnXoa);
@@ -290,5 +301,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.Button btnThoat;
     }
 }
