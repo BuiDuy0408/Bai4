@@ -46,6 +46,7 @@
             this.numericUpDownGN = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
             this.btnThemSP = new System.Windows.Forms.Button();
+            this.btnXoaSP = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSPX)).BeginInit();
@@ -153,6 +154,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnXoaSP);
             this.groupBox2.Controls.Add(this.btnThemSP);
             this.groupBox2.Controls.Add(this.numericUpDownGN);
             this.groupBox2.Controls.Add(this.label11);
@@ -241,6 +243,19 @@
             this.btnThemSP.Text = "<< Thêm";
             this.btnThemSP.UseVisualStyleBackColor = true;
             // 
+            // btnXoaSP
+            // 
+            this.btnXoaSP.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnXoaSP.BackgroundImage")));
+            this.btnXoaSP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnXoaSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoaSP.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnXoaSP.Location = new System.Drawing.Point(26, 159);
+            this.btnXoaSP.Name = "btnXoaSP";
+            this.btnXoaSP.Size = new System.Drawing.Size(102, 24);
+            this.btnXoaSP.TabIndex = 135;
+            this.btnXoaSP.Text = "Xóa >>";
+            this.btnXoaSP.UseVisualStyleBackColor = true;
+            // 
             // frmThemPX
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -283,5 +298,6 @@
         private System.Windows.Forms.NumericUpDown numericUpDownGN;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnThemSP;
+        private System.Windows.Forms.Button btnXoaSP;
     }
 }
