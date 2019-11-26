@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Duy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Duy.Designer.cs">
+      <DependentUpon>Duy.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
