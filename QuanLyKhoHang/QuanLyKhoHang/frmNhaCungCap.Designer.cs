@@ -72,7 +72,7 @@
             "SĐT"});
             this.cboTK.Location = new System.Drawing.Point(120, 32);
             this.cboTK.Name = "cboTK";
-            this.cboTK.Size = new System.Drawing.Size(161, 21);
+            this.cboTK.Size = new System.Drawing.Size(208, 21);
             this.cboTK.TabIndex = 76;
             // 
             // txtTK
@@ -81,6 +81,7 @@
             this.txtTK.Name = "txtTK";
             this.txtTK.Size = new System.Drawing.Size(264, 20);
             this.txtTK.TabIndex = 77;
+            this.txtTK.TextChanged += new System.EventHandler(this.txtTK_TextChanged_1);
             // 
             // label1
             // 
@@ -103,16 +104,16 @@
             // txtMaNCC
             // 
             this.txtMaNCC.Enabled = false;
-            this.txtMaNCC.Location = new System.Drawing.Point(106, 81);
+            this.txtMaNCC.Location = new System.Drawing.Point(120, 81);
             this.txtMaNCC.Name = "txtMaNCC";
-            this.txtMaNCC.Size = new System.Drawing.Size(222, 20);
+            this.txtMaNCC.Size = new System.Drawing.Size(208, 20);
             this.txtMaNCC.TabIndex = 80;
             // 
             // txtTenNCC
             // 
-            this.txtTenNCC.Location = new System.Drawing.Point(106, 115);
+            this.txtTenNCC.Location = new System.Drawing.Point(120, 115);
             this.txtTenNCC.Name = "txtTenNCC";
-            this.txtTenNCC.Size = new System.Drawing.Size(222, 20);
+            this.txtTenNCC.Size = new System.Drawing.Size(208, 20);
             this.txtTenNCC.TabIndex = 81;
             // 
             // txtDiaChi
