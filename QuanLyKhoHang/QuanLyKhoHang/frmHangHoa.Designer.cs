@@ -46,6 +46,10 @@
             this.txtGN = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtGB = new System.Windows.Forms.TextBox();
+            this.txtMoTa = new System.Windows.Forms.TextBox();
+            this.txttk_NSX = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,6 +94,9 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.txtMoTa);
             this.groupBox2.Controls.Add(this.txtGB);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txtGN);
@@ -231,12 +238,54 @@
             this.txtGB.Size = new System.Drawing.Size(152, 22);
             this.txtGB.TabIndex = 88;
             // 
+            // txtMoTa
+            // 
+            this.txtMoTa.Location = new System.Drawing.Point(135, 174);
+            this.txtMoTa.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMoTa.Multiline = true;
+            this.txtMoTa.Name = "txtMoTa";
+            this.txtMoTa.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtMoTa.Size = new System.Drawing.Size(900, 106);
+            this.txtMoTa.TabIndex = 89;
+            this.txtMoTa.WordWrap = false;
+            // 
+            // txttk_NSX
+            // 
+            this.txttk_NSX.Location = new System.Drawing.Point(567, 9);
+            this.txttk_NSX.Margin = new System.Windows.Forms.Padding(4);
+            this.txttk_NSX.Name = "txttk_NSX";
+            this.txttk_NSX.Size = new System.Drawing.Size(160, 22);
+            this.txttk_NSX.TabIndex = 93;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(889, 70);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(98, 17);
+            this.label13.TabIndex = 90;
+            this.label13.Text = "( x1000 VND )";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(889, 108);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(98, 17);
+            this.label10.TabIndex = 91;
+            this.label10.Text = "( x1000 VND )";
+            // 
             // frmHangHoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(1114, 544);
+            this.Controls.Add(this.txttk_NSX);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txttk_TenHH);
@@ -271,5 +320,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtGN;
         private System.Windows.Forms.TextBox txtSL;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtMoTa;
+        private System.Windows.Forms.TextBox txttk_NSX;
     }
 }
