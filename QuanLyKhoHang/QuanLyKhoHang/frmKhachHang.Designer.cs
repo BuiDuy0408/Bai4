@@ -74,11 +74,13 @@
             this.lblGioiTinh = new System.Windows.Forms.Label();
             this.lblGhichu = new System.Windows.Forms.Label();
             this.txtGhichu = new System.Windows.Forms.TextBox();
+            this.pictureBoxKH = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
             this.panelButton.SuspendLayout();
             this.groupBoxTimKiem.SuspendLayout();
             this.groupBoxThongKeKH.SuspendLayout();
             this.panelKH.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKH)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvKhachHang
@@ -519,6 +521,7 @@
             // 
             this.panelKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panelKH.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelKH.Controls.Add(this.pictureBoxKH);
             this.panelKH.Controls.Add(this.lblTopic);
             this.panelKH.Controls.Add(this.btnXoa);
             this.panelKH.Controls.Add(this.cmbGioiTinh);
@@ -599,6 +602,18 @@
             this.txtGhichu.Size = new System.Drawing.Size(163, 60);
             this.txtGhichu.TabIndex = 18;
             // 
+            // pictureBoxKH
+            // 
+            this.pictureBoxKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pictureBoxKH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxKH.BackgroundImage")));
+            this.pictureBoxKH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxKH.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBoxKH.Location = new System.Drawing.Point(821, -2);
+            this.pictureBoxKH.Name = "pictureBoxKH";
+            this.pictureBoxKH.Size = new System.Drawing.Size(237, 210);
+            this.pictureBoxKH.TabIndex = 24;
+            this.pictureBoxKH.TabStop = false;
+            // 
             // frmKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -624,6 +639,7 @@
             this.groupBoxThongKeKH.PerformLayout();
             this.panelKH.ResumeLayout(false);
             this.panelKH.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKH)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -675,6 +691,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label1;
-
+        private System.Windows.Forms.PictureBox pictureBoxKH;
     }
 }
