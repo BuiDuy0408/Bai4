@@ -45,14 +45,7 @@ namespace QuanLyKhoHang
             }
 
         }
-        public void SetNull()
-        {
-            txtTK.Text = "";
-            txtMaNCC.Text = "";
-            txtTenNCC.Text = "";
-            txtDiaChi.Text = "";
-            txtSDT.Text = "";
-        }
+       
         private void btnThem_Click(object sender, EventArgs e)
         {
             SetNull();
