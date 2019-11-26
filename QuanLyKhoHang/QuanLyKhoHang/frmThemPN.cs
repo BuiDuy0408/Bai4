@@ -32,6 +32,13 @@ namespace QuanLyKhoHang
         {
             dgvSP.DataSource = hh.ShowHangHoa("");
         }
+        public void SetNull()
+        {
+            txtTenSP.Text = "";
+            txtNSX.Text = "";
+            txtMoTa.Text = "";
+            numericUpDownGX.Value = numericUpDown2.Value = numericUpDown3.Value = 1;
+        }
         private void frmThemPN_Load(object sender, EventArgs e)
         {
             HienThi();
