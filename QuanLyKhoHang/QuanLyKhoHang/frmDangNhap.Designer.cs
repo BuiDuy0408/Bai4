@@ -34,8 +34,10 @@
             this.txtPass = new System.Windows.Forms.TextBox();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnDangNhap = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,18 +93,6 @@
             this.label13.TabIndex = 18;
             this.label13.Text = "UserName :";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(194, 271);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(408, 28);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "                                    Design by Hoc Lu";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
@@ -115,11 +105,45 @@
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(494, 341);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(408, 28);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "                                    Design by Hoc Lu";
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.Location = new System.Drawing.Point(291, 287);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(171, 50);
+            this.btnThoat.TabIndex = 26;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            // 
+            // btnDangNhap
+            // 
+            this.btnDangNhap.Location = new System.Drawing.Point(291, 209);
+            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(171, 53);
+            this.btnDangNhap.TabIndex = 25;
+            this.btnDangNhap.Text = "Đăng nhập";
+            this.btnDangNhap.UseVisualStyleBackColor = true;
+            // 
             // frmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(915, 371);
+            this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
@@ -142,8 +166,10 @@
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnDangNhap;
     }
 }
 
