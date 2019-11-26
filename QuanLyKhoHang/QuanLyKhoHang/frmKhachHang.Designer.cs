@@ -65,16 +65,27 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnKH = new System.Windows.Forms.Button();
+            this.dgvKhachHang = new System.Windows.Forms.DataGridView();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelKH.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKH)).BeginInit();
             this.groupBoxTimKiem.SuspendLayout();
             this.groupBoxThongKeKH.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
             this.SuspendLayout();
             // 
             // panelKH
             // 
             this.panelKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panelKH.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelKH.Controls.Add(this.dgvKhachHang);
             this.panelKH.Controls.Add(this.lblTopic);
             this.panelKH.Controls.Add(this.pictureBoxKH);
             this.panelKH.Controls.Add(this.btnXoa);
@@ -335,9 +346,9 @@
             this.groupBoxTimKiem.Controls.Add(this.lblKHten);
             this.groupBoxTimKiem.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBoxTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBoxTimKiem.Location = new System.Drawing.Point(543, 222);
+            this.groupBoxTimKiem.Location = new System.Drawing.Point(560, 222);
             this.groupBoxTimKiem.Name = "groupBoxTimKiem";
-            this.groupBoxTimKiem.Size = new System.Drawing.Size(526, 250);
+            this.groupBoxTimKiem.Size = new System.Drawing.Size(509, 341);
             this.groupBoxTimKiem.TabIndex = 7;
             this.groupBoxTimKiem.TabStop = false;
             this.groupBoxTimKiem.Text = "Tìm Kiếm";
@@ -408,7 +419,7 @@
             this.groupBoxThongKeKH.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBoxThongKeKH.Location = new System.Drawing.Point(0, 222);
             this.groupBoxThongKeKH.Name = "groupBoxThongKeKH";
-            this.groupBoxThongKeKH.Size = new System.Drawing.Size(543, 250);
+            this.groupBoxThongKeKH.Size = new System.Drawing.Size(560, 341);
             this.groupBoxThongKeKH.TabIndex = 6;
             this.groupBoxThongKeKH.TabStop = false;
             this.groupBoxThongKeKH.Text = "Thống Kê";
@@ -492,11 +503,97 @@
             this.btnKH.Text = "Top 10 KH Mua Nhiều Nhất";
             this.btnKH.UseVisualStyleBackColor = false;
             // 
+            // dgvKhachHang
+            // 
+            this.dgvKhachHang.BackgroundColor = System.Drawing.Color.Teal;
+            this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKhachHang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column5,
+            this.Column1,
+            this.Column2,
+            this.Column7,
+            this.Column3,
+            this.Column4,
+            this.Column6,
+            this.Column8});
+            this.dgvKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvKhachHang.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dgvKhachHang.Location = new System.Drawing.Point(0, 0);
+            this.dgvKhachHang.Name = "dgvKhachHang";
+            this.dgvKhachHang.ReadOnly = true;
+            this.dgvKhachHang.Size = new System.Drawing.Size(1065, 218);
+            this.dgvKhachHang.TabIndex = 24;
+            // 
+            // Column5
+            // 
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column5.DataPropertyName = "STT";
+            this.Column5.FillWeight = 30F;
+            this.Column5.HeaderText = "STT";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.DataPropertyName = "MaKH";
+            this.Column1.HeaderText = "Mã Khách Hàng";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Visible = false;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.DataPropertyName = "TenKH";
+            this.Column2.HeaderText = "Tên Khách Hàng";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "GT";
+            this.Column7.HeaderText = "Giới Tính";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.DataPropertyName = "DiaChi";
+            this.Column3.HeaderText = "Địa Chỉ";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column4.DataPropertyName = "SDT";
+            this.Column4.HeaderText = "Số Điện Thoại";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column6.DataPropertyName = "LoaiKH";
+            this.Column6.HeaderText = "Loại Khách Hàng";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "GhiChu";
+            this.Column8.HeaderText = "Ghi chú";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
             // frmKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1069, 472);
+            this.ClientSize = new System.Drawing.Size(1069, 563);
             this.Controls.Add(this.groupBoxTimKiem);
             this.Controls.Add(this.groupBoxThongKeKH);
             this.Controls.Add(this.panelKH);
@@ -509,6 +606,7 @@
             this.groupBoxTimKiem.PerformLayout();
             this.groupBoxThongKeKH.ResumeLayout(false);
             this.groupBoxThongKeKH.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -551,5 +649,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnKH;
+        private System.Windows.Forms.DataGridView dgvKhachHang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
     }
 }
