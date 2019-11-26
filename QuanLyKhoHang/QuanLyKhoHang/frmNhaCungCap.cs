@@ -175,5 +175,10 @@ namespace QuanLyKhoHang
                 else if (cboTK.SelectedIndex == 3) TimKiem("SDT");
             }
         }
+
+        private void txtTK_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
