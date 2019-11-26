@@ -22,28 +22,7 @@ namespace BusinessLogic
             return dt;
         }
 
-        public string InsertHangHoa(string tenhh, int soluong, long giannhap, long giaxuat, string nsx, string thongtin)
-        {
-            string sql = "ThemHH";
-            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
-            con.Open();
-            SqlCommand cmd = new SqlCommand(sql, con);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@tensp", tenhh);
-            cmd.Parameters.AddWithValue("@soluong", soluong);
-            cmd.Parameters.AddWithValue("@gianhap", giannhap);
-            cmd.Parameters.AddWithValue("@giaxuat", giaxuat);
-            cmd.Parameters.AddWithValue("@nsx", nsx);
-            cmd.Parameters.AddWithValue("@thongtin", thongtin);
-
-            DataTable dt = new DataTable();
-            SqlDataAdapter ad = new SqlDataAdapter(cmd);
-            ad.Fill(dt);
-            string ma = dt.Rows[0].ItemArray[0].ToString();
-            cmd.Dispose();
-            con.Close();
-            return ma;
-        }
+        
         public DataTable TKHH_TenHH(string TenHH)
         {
             string sql = "SELECT * FROM HANGHOA WHERE TenHH LIKE N'%' + @TenHH + '%'";
@@ -58,7 +37,20 @@ namespace BusinessLogic
             da.Fill(dt);
             return dt;
         }
-       
+        public DataTable TKHH_NSX(string NSX)
+        {
+            string sql = "SELECT * FROM HANGHOA WHERE NSX LIKE N'%' + @NSX + '%'";
+            DataTable dt = new DataTable();
+            SqlConnection con = new SqlConnection(KetNoiDB.getconnect());
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataAdapter da = new SqlDataAdapter();
+
+            cmd.Parameters.AddWithValue("@NSX", NSX);
+            da.SelectCommand = cmd;
+            da.Fill(dt);
+            return dt;
+        }
         //public void UpdateSanPham(EC_SANPHAM et)
         //{
         //    string sql = "SuaSP";
