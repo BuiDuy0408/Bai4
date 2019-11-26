@@ -239,7 +239,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox3.Controls.Add(this.numericUpDown3);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.numericUpDownGX);
@@ -490,7 +490,7 @@
             // 
             // dgvSPN
             // 
-            this.dgvSPN.BackgroundColor = System.Drawing.Color.Teal;
+            this.dgvSPN.BackgroundColor = System.Drawing.Color.MediumSeaGreen;
             this.dgvSPN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSPN.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column2,
