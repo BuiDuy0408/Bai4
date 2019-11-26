@@ -83,6 +83,52 @@ namespace QuanLyKhoHang
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
         }
+<<<<<<< HEAD
+        //private void btnXoa_Click(object sender, EventArgs e)
+        //{
+        //    if (MessageBox.Show("Bạn có chắc muốn xóa?", "Cảnh báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
+        //    {
+        //        try
+        //        {
+        //            kh.DeleteKhachHang(txtMaKH.Text);
+        //            setNULL();
+        //            DKOThongTin(false);
+        //        }
+        //        catch { }
+        //    }
+        //    HienThiDGV();
+        //}
+
+        //private void btnSua_Click(object sender, EventArgs e)
+        //{
+        //    if (MessageBox.Show("Bạn có chắc muốn Sửa thông tin khach hang này?", "Cảnh báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
+        //    {
+        //        DKOThongTin(true);
+        //        txtMaKH.Enabled = false;
+        //        temp = 1;
+        //        btnLuu.Enabled = true;
+        //        btnThem.Enabled = btnXoa.Enabled = btnSua.Enabled = false;
+        //    }
+        //}
+
+        //private void btnLuu_Click(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        if (temp == 1)
+        //            kh.UpdateKhachHang(txtMaKH.Text, txttenKH.Text, cmbGioiTinh.Text, txtDC.Text, txtSoDT.Text, cmbLoaiKH.Text, txtGhichu.Text);
+        //        else
+        //            kh.InsertKhachHang(txttenKH.Text, cmbGioiTinh.Text, txtDC.Text, txtSoDT.Text, cmbLoaiKH.Text, txtGhichu.Text);
+        //    }
+        //    catch
+        //    {
+        //        MessageBox.Show("Lưu Thất Bại.");
+        //    }
+        //    setNULL();
+        //    DKOThongTin(false);
+        //    HienThiDGV();
+        //}
+=======
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
@@ -129,6 +175,7 @@ namespace QuanLyKhoHang
             HienThiDGV();
         }
 
+>>>>>>> 6282032e73b32aed940c7c65076dbbeab47fadf9
         private void txtKHten_TextChanged(object sender, EventArgs e)
         {
             if (txtKHten.Text != null)
