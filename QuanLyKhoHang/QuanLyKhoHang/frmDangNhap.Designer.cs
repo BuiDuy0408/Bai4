@@ -152,7 +152,7 @@
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label13);
             this.Name = "frmDangNhap";
-            this.Text = "Form1";
+            this.Text = "Dang Nhap He Thong";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
