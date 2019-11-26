@@ -41,8 +41,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtGN = new System.Windows.Forms.TextBox();
             this.txtSL = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.txtNSX = new System.Windows.Forms.TextBox();
             this.txtTenSP = new System.Windows.Forms.TextBox();
             this.txtMaSP = new System.Windows.Forms.TextBox();
@@ -117,8 +115,6 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txtGN);
             this.groupBox2.Controls.Add(this.txtSL);
-            this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.txtNSX);
             this.groupBox2.Controls.Add(this.txtTenSP);
             this.groupBox2.Controls.Add(this.txtMaSP);
@@ -201,26 +197,6 @@
             this.txtSL.Name = "txtSL";
             this.txtSL.Size = new System.Drawing.Size(261, 22);
             this.txtSL.TabIndex = 85;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(644, 70);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(66, 17);
-            this.label11.TabIndex = 78;
-            this.label11.Text = "Giá nhập";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(644, 33);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 17);
-            this.label4.TabIndex = 58;
-            this.label4.Text = "Số lượng";
             // 
             // txtNSX
             // 
@@ -406,8 +382,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtGB;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtGN;
