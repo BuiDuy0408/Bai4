@@ -103,6 +103,7 @@
             this.dgvKhachHang.ReadOnly = true;
             this.dgvKhachHang.Size = new System.Drawing.Size(1063, 215);
             this.dgvKhachHang.TabIndex = 6;
+            this.dgvKhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhachHang_CellClick);
             // 
             // Column5
             // 
@@ -232,7 +233,7 @@
             this.btnThem.TabIndex = 5;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
-            //this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // panelButton
             // 
@@ -270,6 +271,7 @@
             this.txtKHDiaChi.Name = "txtKHDiaChi";
             this.txtKHDiaChi.Size = new System.Drawing.Size(142, 25);
             this.txtKHDiaChi.TabIndex = 5;
+            this.txtKHDiaChi.TextChanged += new System.EventHandler(this.txtKHDiaChi_TextChanged);
             // 
             // lblKHDiaChi
             // 
@@ -291,6 +293,7 @@
             this.cmbKHLoai.Name = "cmbKHLoai";
             this.cmbKHLoai.Size = new System.Drawing.Size(127, 25);
             this.cmbKHLoai.TabIndex = 3;
+            this.cmbKHLoai.SelectedIndexChanged += new System.EventHandler(this.cmbKHLoai_SelectedIndexChanged);
             // 
             // lblKHLoai
             // 
@@ -307,6 +310,7 @@
             this.txtKHten.Name = "txtKHten";
             this.txtKHten.Size = new System.Drawing.Size(127, 25);
             this.txtKHten.TabIndex = 1;
+            this.txtKHten.TextChanged += new System.EventHandler(this.txtKHten_TextChanged);
             // 
             // lblKHten
             // 
@@ -348,6 +352,7 @@
             this.btnThongKe.TabIndex = 6;
             this.btnThongKe.Text = "Thống Kê";
             this.btnThongKe.UseVisualStyleBackColor = false;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // dateTimePicker2
             // 
@@ -398,6 +403,7 @@
             this.btnRefresh.TabIndex = 1;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnKH
             // 
@@ -413,6 +419,7 @@
             this.btnKH.TabIndex = 0;
             this.btnKH.Text = "Top 10 KH Mua Nhiều Nhất";
             this.btnKH.UseVisualStyleBackColor = false;
+            this.btnKH.Click += new System.EventHandler(this.btnKH_Click);
             // 
             // cmbLoaiKH
             // 
@@ -540,6 +547,7 @@
             this.panelKH.Name = "panelKH";
             this.panelKH.Size = new System.Drawing.Size(1063, 222);
             this.panelKH.TabIndex = 4;
+            this.panelKH.Paint += new System.Windows.Forms.PaintEventHandler(this.panelKH_Paint);
             // 
             // lblTopic
             // 
@@ -622,6 +630,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Khách Hàng";
+            this.Load += new System.EventHandler(this.KhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
             this.panelButton.ResumeLayout(false);
             this.groupBoxTimKiem.ResumeLayout(false);

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessLogic;
 
 namespace QuanLyKhoHang
 {
@@ -18,33 +19,14 @@ namespace QuanLyKhoHang
             InitializeComponent();
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnLuu_Click(object sender, EventArgs e)
-        {
-
-        }
         ChiNhanh kh = new ChiNhanh();
         int temp = 0;
 
         private void KhachHang_Load(object sender, EventArgs e)
         {
             DKOThongTin(false);
-            //setNULL();
-            //HienThiDGV();
+            setNULL();
+            HienThiDGV();
         }
 
         public void DKOThongTin(bool bl)
@@ -70,6 +52,7 @@ namespace QuanLyKhoHang
                 i++;
             }
         }
+
         private void dgvKhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             btnSua.Enabled = true;
@@ -91,7 +74,7 @@ namespace QuanLyKhoHang
             }
         }
 
-        private void btnThem_Click(object sender, EventArgs e,string a)
+        private void btnThem_Click(object sender, EventArgs e)
         {
             setNULL();
             DKOThongTin(true);
@@ -100,6 +83,7 @@ namespace QuanLyKhoHang
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
         }
+<<<<<<< HEAD
         //private void btnXoa_Click(object sender, EventArgs e)
         //{
         //    if (MessageBox.Show("Bạn có chắc muốn xóa?", "Cảnh báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
@@ -144,6 +128,54 @@ namespace QuanLyKhoHang
         //    DKOThongTin(false);
         //    HienThiDGV();
         //}
+=======
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc muốn xóa?", "Cảnh báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                try
+                {
+                    kh.DeleteKhachHang(txtMaKH.Text);
+                    setNULL();
+                    DKOThongTin(false);
+                }
+                catch { }
+            }
+            HienThiDGV();
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc muốn Sửa thông tin khach hang này?", "Cảnh báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                DKOThongTin(true);
+                txtMaKH.Enabled = false;
+                temp = 1;
+                btnLuu.Enabled = true;
+                btnThem.Enabled = btnXoa.Enabled = btnSua.Enabled = false;
+            }
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (temp == 1)
+                    kh.UpdateKhachHang(txtMaKH.Text, txttenKH.Text, cmbGioiTinh.Text, txtDC.Text, txtSoDT.Text, cmbLoaiKH.Text, txtGhichu.Text);
+                else
+                    kh.InsertKhachHang(txttenKH.Text, cmbGioiTinh.Text, txtDC.Text, txtSoDT.Text, cmbLoaiKH.Text, txtGhichu.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Lưu Thất Bại.");
+            }
+            setNULL();
+            DKOThongTin(false);
+            HienThiDGV();
+        }
+
+>>>>>>> 6282032e73b32aed940c7c65076dbbeab47fadf9
         private void txtKHten_TextChanged(object sender, EventArgs e)
         {
             if (txtKHten.Text != null)
