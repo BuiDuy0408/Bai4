@@ -41,14 +41,10 @@
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.numericUpDownGX = new System.Windows.Forms.NumericUpDown();
-            this.btnLuu = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnHuy = new System.Windows.Forms.Button();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.txtMoTa = new System.Windows.Forms.TextBox();
             this.txtNSX = new System.Windows.Forms.TextBox();
             this.txtTenSP = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -183,14 +179,10 @@
             this.groupBox3.Controls.Add(this.numericUpDown3);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.numericUpDownGX);
-            this.groupBox3.Controls.Add(this.btnLuu);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.numericUpDown2);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.btnHuy);
-            this.groupBox3.Controls.Add(this.btnThem);
-            this.groupBox3.Controls.Add(this.txtMoTa);
             this.groupBox3.Controls.Add(this.txtNSX);
             this.groupBox3.Controls.Add(this.txtTenSP);
             this.groupBox3.Controls.Add(this.label7);
@@ -265,16 +257,6 @@
             0,
             0});
             // 
-            // btnLuu
-            // 
-            this.btnLuu.Location = new System.Drawing.Point(1331, 91);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(101, 43);
-            this.btnLuu.TabIndex = 115;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -324,37 +306,6 @@
             this.label6.Size = new System.Drawing.Size(69, 17);
             this.label6.TabIndex = 110;
             this.label6.Text = "Số Lượng";
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.Location = new System.Drawing.Point(1331, 146);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(101, 43);
-            this.btnHuy.TabIndex = 109;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.UseVisualStyleBackColor = true;
-            // 
-            // btnThem
-            // 
-            this.btnThem.Location = new System.Drawing.Point(1331, 36);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(101, 43);
-            this.btnThem.TabIndex = 108;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
-            // 
-            // txtMoTa
-            // 
-            this.txtMoTa.Location = new System.Drawing.Point(552, 26);
-            this.txtMoTa.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMoTa.Multiline = true;
-            this.txtMoTa.Name = "txtMoTa";
-            this.txtMoTa.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtMoTa.Size = new System.Drawing.Size(735, 187);
-            this.txtMoTa.TabIndex = 103;
-            this.txtMoTa.WordWrap = false;
             // 
             // txtNSX
             // 
@@ -728,6 +679,7 @@
             this.Controls.Add(this.label2);
             this.Name = "frmThemPN";
             this.Text = "frmThemPN";
+            this.Load += new System.EventHandler(this.FrmThemPN_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
@@ -761,14 +713,10 @@
         private System.Windows.Forms.NumericUpDown numericUpDown3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.NumericUpDown numericUpDownGX;
-        private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnHuy;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.TextBox txtMoTa;
         private System.Windows.Forms.TextBox txtNSX;
         private System.Windows.Forms.TextBox txtTenSP;
         private System.Windows.Forms.Label label7;

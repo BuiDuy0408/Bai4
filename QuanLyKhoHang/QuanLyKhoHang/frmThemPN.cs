@@ -16,5 +16,10 @@ namespace QuanLyKhoHang
         {
             InitializeComponent();
         }
+
+        private void FrmThemPN_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
