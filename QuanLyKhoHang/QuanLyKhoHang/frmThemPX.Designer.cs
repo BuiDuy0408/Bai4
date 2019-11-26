@@ -48,6 +48,7 @@
             this.btnThemSP = new System.Windows.Forms.Button();
             this.btnXoaSP = new System.Windows.Forms.Button();
             this.btnTaoMoi = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSPX)).BeginInit();
@@ -155,6 +156,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnLuu);
             this.groupBox2.Controls.Add(this.btnTaoMoi);
             this.groupBox2.Controls.Add(this.btnXoaSP);
             this.groupBox2.Controls.Add(this.btnThemSP);
@@ -271,6 +273,19 @@
             this.btnTaoMoi.Text = "Tạo Phiếu Mới";
             this.btnTaoMoi.UseVisualStyleBackColor = true;
             // 
+            // btnLuu
+            // 
+            this.btnLuu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLuu.BackgroundImage")));
+            this.btnLuu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuu.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnLuu.Location = new System.Drawing.Point(28, 219);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(102, 24);
+            this.btnLuu.TabIndex = 137;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = true;
+            // 
             // frmThemPX
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -315,5 +330,6 @@
         private System.Windows.Forms.Button btnThemSP;
         private System.Windows.Forms.Button btnXoaSP;
         private System.Windows.Forms.Button btnTaoMoi;
+        private System.Windows.Forms.Button btnLuu;
     }
 }
