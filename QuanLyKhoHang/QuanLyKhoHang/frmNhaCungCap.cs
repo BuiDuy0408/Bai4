@@ -69,6 +69,66 @@ namespace QuanLyKhoHang
             MessageBox.Show("Sửa dữ liệu thành công !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             HienThi();
         }
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MessageBox.Show("Bạn có chắc chắn muốn xóa dữ liệu không ???", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    if (dataGridView1.SelectedRows.Count == 1) ncc.DeleteNCC(txtMaNCC.Text);
+                    else if (dataGridView1.SelectedRows.Count > 1)
+                    {
+                        for (int i = 0; i < dataGridView1.SelectedRows.Count; i++)
+                        {
+                            ncc.DeleteNCC(dataGridView1.Rows[dataGridView1.SelectedRows[i].Index].Cells[0].Value.ToString());
+                        }
+                    }
+                    HienThi();
+                    MessageBox.Show("Xóa dữ liệu thành công !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Không xóa được dữ liệu !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            if (txtTenNCC.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập tên sản phẩm !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (txtDiaChi.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập tên NSX !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (txtSDT.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập thông tin sản phẩm !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            long serult;
+            if (long.TryParse(txtSDT.Text, out serult) == false)
+            {
+                MessageBox.Show("Số điện thoại không hợp lệ !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            try
+            {
+                ncc.InsertNCC(txtTenNCC.Text, txtDiaChi.Text, txtSDT.Text);
+                MessageBox.Show("Thêm dữ liệu thành công !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                HienThi();
+                cboTK.Enabled = true;
+                txtTK.Enabled = true;
+                btnLuu.Enabled = false;
+                btnHuy.Enabled = false;
+                btnThem.Enabled = true;
+            }
+            catch { }
+        }
 
     }
 }
