@@ -41,14 +41,10 @@
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.numericUpDownGX = new System.Windows.Forms.NumericUpDown();
-            this.btnLuu = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnHuy = new System.Windows.Forms.Button();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.txtMoTa = new System.Windows.Forms.TextBox();
             this.txtNSX = new System.Windows.Forms.TextBox();
             this.txtTenSP = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -80,6 +76,10 @@
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnHuy = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.txtMoTa = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGX)).BeginInit();
@@ -265,16 +265,6 @@
             0,
             0});
             // 
-            // btnLuu
-            // 
-            this.btnLuu.Location = new System.Drawing.Point(1331, 91);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(101, 43);
-            this.btnLuu.TabIndex = 115;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -325,37 +315,6 @@
             this.label6.TabIndex = 110;
             this.label6.Text = "Số Lượng";
             // 
-            // btnHuy
-            // 
-            this.btnHuy.Location = new System.Drawing.Point(1331, 146);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(101, 43);
-            this.btnHuy.TabIndex = 109;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.UseVisualStyleBackColor = true;
-            // 
-            // btnThem
-            // 
-            this.btnThem.Location = new System.Drawing.Point(1331, 36);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(101, 43);
-            this.btnThem.TabIndex = 108;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
-            // 
-            // txtMoTa
-            // 
-            this.txtMoTa.Location = new System.Drawing.Point(552, 26);
-            this.txtMoTa.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMoTa.Multiline = true;
-            this.txtMoTa.Name = "txtMoTa";
-            this.txtMoTa.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtMoTa.Size = new System.Drawing.Size(735, 187);
-            this.txtMoTa.TabIndex = 103;
-            this.txtMoTa.WordWrap = false;
-            // 
             // txtNSX
             // 
             this.txtNSX.Location = new System.Drawing.Point(129, 66);
@@ -371,6 +330,7 @@
             this.txtTenSP.Name = "txtTenSP";
             this.txtTenSP.Size = new System.Drawing.Size(295, 22);
             this.txtTenSP.TabIndex = 101;
+            this.txtTenSP.TextChanged += new System.EventHandler(this.TxtTenSP_TextChanged);
             // 
             // label7
             // 
@@ -703,6 +663,47 @@
             this.Column12.Name = "Column12";
             this.Column12.Width = 150;
             // 
+            // btnHuy
+            // 
+            this.btnHuy.Location = new System.Drawing.Point(1331, 146);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(101, 43);
+            this.btnHuy.TabIndex = 109;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseVisualStyleBackColor = true;
+            // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(1331, 36);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(101, 43);
+            this.btnThem.TabIndex = 108;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.Location = new System.Drawing.Point(1331, 91);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(101, 43);
+            this.btnLuu.TabIndex = 115;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = true;
+            // 
+            // txtMoTa
+            // 
+            this.txtMoTa.Location = new System.Drawing.Point(552, 26);
+            this.txtMoTa.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMoTa.Multiline = true;
+            this.txtMoTa.Name = "txtMoTa";
+            this.txtMoTa.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtMoTa.Size = new System.Drawing.Size(735, 187);
+            this.txtMoTa.TabIndex = 103;
+            this.txtMoTa.WordWrap = false;
+            // 
             // frmThemPN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -728,6 +729,7 @@
             this.Controls.Add(this.label2);
             this.Name = "frmThemPN";
             this.Text = "frmThemPN";
+            this.Load += new System.EventHandler(this.FrmThemPN_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
@@ -761,14 +763,10 @@
         private System.Windows.Forms.NumericUpDown numericUpDown3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.NumericUpDown numericUpDownGX;
-        private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnHuy;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.TextBox txtMoTa;
         private System.Windows.Forms.TextBox txtNSX;
         private System.Windows.Forms.TextBox txtTenSP;
         private System.Windows.Forms.Label label7;
@@ -800,5 +798,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.TextBox txtMoTa;
     }
 }

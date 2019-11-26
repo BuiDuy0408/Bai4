@@ -52,5 +52,23 @@ namespace QuanLyKhoHang
             txttenKH.Enabled = txtSoDT.Enabled = txtMaKH.Enabled = txtDC.Enabled = cmbLoaiKH.Enabled = bl;
             cmbGioiTinh.Enabled = txtGhichu.Enabled = bl;
         }
+        public void setNULL()
+        {
+            txtMaKH.Text = txtDC.Text = txtSoDT.Text = txttenKH.Text = cmbGioiTinh.Text = txtGhichu.Text = "";
+            cmbLoaiKH.Text = "Khách Lẻ";
+            temp = 0;
+            btnXoa.Enabled = btnThem.Enabled = btnSua.Enabled = true;
+            btnLuu.Enabled = false;
+        }
+        public void HienThiDGV()
+        {
+            dgvKhachHang.DataSource = kh.HienThiKhachHang();
+            int i = 0;
+            while (i < dgvKhachHang.Rows.Count - 1)
+            {
+                dgvKhachHang.Rows[i].Cells[0].Value = (i + 1).ToString();
+                i++;
+            }
+        }
     }
 }
