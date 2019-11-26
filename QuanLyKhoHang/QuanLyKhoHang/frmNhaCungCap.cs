@@ -45,53 +45,7 @@ namespace QuanLyKhoHang
             }
 
         }
-        public void SetNull()
-        {
-            txtTK.Text = "";
-            txtMaNCC.Text = "";
-            txtTenNCC.Text = "";
-            txtDiaChi.Text = "";
-            txtSDT.Text = "";
-        }
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-            SetNull();
-            cboTK.Enabled = false;
-            txtTK.Enabled = false;
-            btnLuu.Enabled = true;
-            btnHuy.Enabled = true;
-            btnThem.Enabled = false;
-        }
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            ncc.UpdateNCC(txtMaNCC.Text, txtTenNCC.Text, txtDiaChi.Text, txtSDT.Text);
-            MessageBox.Show("Sửa dữ liệu thành công !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            HienThi();
-        }
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (MessageBox.Show("Bạn có chắc chắn muốn xóa dữ liệu không ???", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    if (dataGridView1.SelectedRows.Count == 1) ncc.DeleteNCC(txtMaNCC.Text);
-                    else if (dataGridView1.SelectedRows.Count > 1)
-                    {
-                        for (int i = 0; i < dataGridView1.SelectedRows.Count; i++)
-                        {
-                            ncc.DeleteNCC(dataGridView1.Rows[dataGridView1.SelectedRows[i].Index].Cells[0].Value.ToString());
-                        }
-                    }
-                    HienThi();
-                    MessageBox.Show("Xóa dữ liệu thành công !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Không xóa được dữ liệu !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+       
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
