@@ -47,6 +47,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.btnThemSP = new System.Windows.Forms.Button();
             this.btnXoaSP = new System.Windows.Forms.Button();
+            this.btnTaoMoi = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSPX)).BeginInit();
@@ -154,6 +155,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnTaoMoi);
             this.groupBox2.Controls.Add(this.btnXoaSP);
             this.groupBox2.Controls.Add(this.btnThemSP);
             this.groupBox2.Controls.Add(this.numericUpDownGN);
@@ -256,6 +258,19 @@
             this.btnXoaSP.Text = "Xóa >>";
             this.btnXoaSP.UseVisualStyleBackColor = true;
             // 
+            // btnTaoMoi
+            // 
+            this.btnTaoMoi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTaoMoi.BackgroundImage")));
+            this.btnTaoMoi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTaoMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaoMoi.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnTaoMoi.Location = new System.Drawing.Point(28, 189);
+            this.btnTaoMoi.Name = "btnTaoMoi";
+            this.btnTaoMoi.Size = new System.Drawing.Size(102, 24);
+            this.btnTaoMoi.TabIndex = 136;
+            this.btnTaoMoi.Text = "Tạo Phiếu Mới";
+            this.btnTaoMoi.UseVisualStyleBackColor = true;
+            // 
             // frmThemPX
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -299,5 +314,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnThemSP;
         private System.Windows.Forms.Button btnXoaSP;
+        private System.Windows.Forms.Button btnTaoMoi;
     }
 }
