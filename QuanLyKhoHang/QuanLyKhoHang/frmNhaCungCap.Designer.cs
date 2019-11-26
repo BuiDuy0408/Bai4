@@ -177,18 +177,18 @@
             // btnHuy
             // 
             this.btnHuy.Enabled = false;
-            this.btnHuy.Location = new System.Drawing.Point(618, 152);
+            this.btnHuy.Location = new System.Drawing.Point(609, 152);
             this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(75, 35);
+            this.btnHuy.Size = new System.Drawing.Size(92, 35);
             this.btnHuy.TabIndex = 87;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(76, 152);
+            this.btnThem.Location = new System.Drawing.Point(61, 152);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 35);
+            this.btnThem.Size = new System.Drawing.Size(90, 35);
             this.btnThem.TabIndex = 86;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -202,10 +202,10 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(29, 199);
+            this.dataGridView1.Location = new System.Drawing.Point(76, 199);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(689, 232);
+            this.dataGridView1.Size = new System.Drawing.Size(554, 204);
             this.dataGridView1.TabIndex = 91;
             // 
             // Column1
