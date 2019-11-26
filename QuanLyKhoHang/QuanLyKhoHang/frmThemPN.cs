@@ -141,6 +141,7 @@ namespace QuanLyKhoHang
 
             }
         }
+
         private void TxtTenSP_TextChanged(object sender, EventArgs e)
         {
 
