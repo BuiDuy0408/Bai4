@@ -140,6 +140,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(915, 371);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnThoat);
@@ -151,7 +152,7 @@
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label13);
             this.Name = "frmDangNhap";
-            this.Text = "Form1";
+            this.Text = "Dang Nhap He Thong";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
