@@ -21,7 +21,10 @@ namespace QuanLyKhoHang
 
         ChiNhanh kh = new ChiNhanh();
         int temp = 0;
+        public void hello()
+        {
 
+        }
         private void KhachHang_Load(object sender, EventArgs e)
         {
             DKOThongTin(false);
