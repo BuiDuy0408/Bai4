@@ -12,7 +12,7 @@ namespace QuanLyKhoHang
 {
     public partial class frmThemPN : Form
     {
-
+     
         public frmThemPN()
         {
             InitializeComponent();
@@ -31,6 +31,10 @@ namespace QuanLyKhoHang
         public void HienThi()
         {
             dgvSP.DataSource = hh.ShowHangHoa("");
+        }
+        public void hi()
+        {
+
         }
         public void SetNull()
         {
